@@ -1,0 +1,162 @@
+---
+# Ansible Playbook: Deploy Zomato Application to EC2
+# This playbook deploys the containerized application using docker-compose
+
+- name: Deploy Zomato Application
+  hosts: app_servers
+  become: yes
+  gather_facts: yes
+
+  vars:
+    app_dir: /home/ubuntu/zomato-app
+    repo_url: https://github.com/harsh-raj04/Zomato-devops-pipeline.git
+    branch: "{{ lookup('env', 'GIT_BRANCH') | default('main', true) | regex_replace('^origin/', '') }}"
+
+  tasks:
+    # ==========================================
+    # 1. ENSURE DOCKER IS RUNNING
+    # ==========================================
+    - name: Ensure Docker service is running
+      systemd:
+        name: docker
+        state: started
+        enabled: yes
+
+    # ==========================================
+    # 2. CLONE/UPDATE APPLICATION CODE
+    # ==========================================
+    - name: Check if app directory exists
+      stat:
+        path: "{{ app_dir }}"
+      register: app_dir_stat
+
+    - name: Clone repository if not exists
+      git:
+        repo: "{{ repo_url }}"
+        dest: "{{ app_dir }}"
+        version: "{{ branch }}"
+        force: yes
+      when: not app_dir_stat.stat.exists
+      become_user: ubuntu
+
+    - name: Pull latest changes
+      git:
+        repo: "{{ repo_url }}"
+        dest: "{{ app_dir }}"
+        version: "{{ branch }}"
+        force: yes
+      become_user: ubuntu
+      when: app_dir_stat.stat.exists
+
+    - name: Set correct ownership
+      file:
+        path: "{{ app_dir }}"
+        owner: ubuntu
+        group: ubuntu
+        recurse: yes
+
+    # ==========================================
+    # 3. STOP EXISTING CONTAINERS
+    # ==========================================
+    - name: Stop existing containers
+      shell: docker compose down || docker-compose down || true
+      args:
+        chdir: "{{ app_dir }}"
+      become_user: ubuntu
+      ignore_errors: yes
+
+    # ==========================================
+    # 4. CLEAN UP OLD IMAGES (OPTIONAL)
+    # ==========================================
+    - name: Remove old Docker images to save space
+      shell: docker image prune -af --filter "until=24h"
+      ignore_errors: yes
+
+    # ==========================================
+    # 5. START NEW CONTAINERS
+    # ==========================================
+    - name: Start application with docker-compose
+      shell: |
+        export VITE_API_BASE=http://{{ ansible_host }}:4000
+        docker compose up -d --build || docker-compose up -d --build
+      args:
+        chdir: "{{ app_dir }}"
+      become_user: ubuntu
+      environment:
+        VITE_API_BASE: "http://{{ ansible_host }}:4000"
+
+    # ==========================================
+    # 6. WAIT FOR SERVICES TO BE HEALTHY
+    # ==========================================
+    - name: Wait for database to be healthy
+      shell: docker compose ps db | grep "healthy" || docker-compose ps db | grep "healthy"
+      args:
+        chdir: "{{ app_dir }}"
+      register: db_health
+      until: db_health.rc == 0
+      retries: 30
+      delay: 2
+      become_user: ubuntu
+      ignore_errors: yes
+
+    - name: Wait for backend to start
+      wait_for:
+        port: 4000
+        host: localhost
+        delay: 5
+        timeout: 60
+
+    - name: Wait for frontend to start
+      wait_for:
+        port: 3000
+        host: localhost
+        delay: 5
+        timeout: 60
+
+    # ==========================================
+    # 7. VERIFY DEPLOYMENT
+    # ==========================================
+    - name: Check running containers
+      shell: docker compose ps || docker-compose ps
+      args:
+        chdir: "{{ app_dir }}"
+      become_user: ubuntu
+      register: container_status
+
+    - name: Display container status
+      debug:
+        var: container_status.stdout_lines
+
+    - name: Verify backend API
+      uri:
+        url: "http://localhost:4000/api/restaurants"
+        method: GET
+        status_code: 200
+      register: backend_check
+      retries: 5
+      delay: 3
+      until: backend_check.status == 200
+
+    - name: Verify frontend
+      uri:
+        url: "http://localhost:3000"
+        method: GET
+        status_code: 200
+      register: frontend_check
+      retries: 5
+      delay: 3
+      until: frontend_check.status == 200
+
+    # ==========================================
+    # 8. DEPLOYMENT SUMMARY
+    # ==========================================
+    - name: Deployment Summary
+      debug:
+        msg:
+          - "========================================"
+          - "🎉 Deployment Successful!"
+          - "========================================"
+          - "Frontend: http://{{ ansible_host }}:3000"
+          - "Backend: http://{{ ansible_host }}:4000"
+          - "Branch: {{ branch }}"
+          - "========================================"
