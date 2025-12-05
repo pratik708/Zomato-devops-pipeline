@@ -4,7 +4,7 @@
 
 [app_servers]
 # Using private IP since Jenkins and app server are in same VPC/subnet
-zomato-server ansible_host=10.0.1.245 ansible_user=ubuntu
+zomato-server ansible_host=10.0.1.204 ansible_user=ubuntu
 
 [app_servers:vars]
 # Python interpreter on Ubuntu

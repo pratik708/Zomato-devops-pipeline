@@ -10,8 +10,8 @@ pipeline {
         DOCKER_CREDENTIALS_ID = 'dockerhub-credentials'
         
         // AWS EC2 configuration
-        EC2_HOST = '10.0.1.245'  // Private IP - Jenkins and app server in same VPC
-        EC2_PUBLIC_IP = '3.108.112.197'  // Public IP for browser access
+        EC2_HOST = '10.0.1.204'  // Private IP - Jenkins and app server in same VPC
+        EC2_PUBLIC_IP = '13.203.190.4'  // Public IP for browser access
         EC2_USER = 'ubuntu'
         SSH_CREDENTIALS_ID = 'ec2-ssh-key'
         
