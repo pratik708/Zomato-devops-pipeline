@@ -30,18 +30,18 @@
       "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop",
       "deliveryTime": "20-25",
       "menu": [
-        { "name": "McAloo Tikki Burger", "price": 59, "description": "Crispy aloo tikki patty with fresh veggies", "category": "Burgers", "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=200" },
-        { "name": "McVeggie", "price": 99, "description": "Vegetable patty with creamy mayo", "category": "Burgers", "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=200" },
-        { "name": "McSpicy Paneer", "price": 179, "description": "Crispy paneer patty with spicy habanero sauce", "category": "Burgers", "image": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=200" },
-        { "name": "Chicken McGrill", "price": 149, "description": "Grilled chicken patty with fresh lettuce", "category": "Burgers", "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=200" },
-        { "name": "McChicken", "price": 129, "description": "Crispy chicken patty with mayo", "category": "Burgers", "image": "https://images.unsplash.com/photo-1562547256-2c5ee93b60b7?w=200" },
-        { "name": "Big Mac", "price": 249, "description": "Two beef patties with special sauce", "category": "Burgers", "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=200" },
-        { "name": "French Fries (Medium)", "price": 99, "description": "Crispy golden fries with salt", "category": "Sides", "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=200" },
-        { "name": "Hash Browns", "price": 49, "description": "Crispy potato hash browns", "category": "Sides", "image": "https://images.unsplash.com/photo-1619600181240-e7e7c9d5c7b5?w=200" },
-        { "name": "Chicken Nuggets (6pc)", "price": 149, "description": "Crispy chicken nuggets", "category": "Sides", "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=200" },
-        { "name": "McFlurry Oreo", "price": 99, "description": "Vanilla soft serve with Oreo crumbles", "category": "Desserts", "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=200" },
-        { "name": "Chocolate Shake", "price": 129, "description": "Rich chocolate milkshake", "category": "Beverages", "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=200" },
-        { "name": "Cold Coffee", "price": 119, "description": "Refreshing iced coffee", "category": "Beverages", "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=200" }
+        { "name": "McAloo Tikki Burger", "price": 59, "description": "Crispy aloo tikki patty with fresh veggies", "category": "Burgers", "image": "https://images.unsplash.com/photo-1603064752734-4c48eff53d05?w=400" },
+        { "name": "McVeggie", "price": 99, "description": "Vegetable patty with creamy mayo", "category": "Burgers", "image": "https://images.unsplash.com/photo-1585238341710-4a9828e4f6e8?w=400" },
+        { "name": "McSpicy Paneer", "price": 179, "description": "Crispy paneer patty with spicy habanero sauce", "category": "Burgers", "image": "https://images.unsplash.com/photo-1603064752734-4c48eff53d05?w=400" },
+        { "name": "Chicken McGrill", "price": 149, "description": "Grilled chicken patty with fresh lettuce", "category": "Burgers", "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400" },
+        { "name": "McChicken", "price": 129, "description": "Crispy chicken patty with mayo", "category": "Burgers", "image": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=400" },
+        { "name": "Big Mac", "price": 249, "description": "Two beef patties with special sauce", "category": "Burgers", "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400" },
+        { "name": "French Fries (Medium)", "price": 99, "description": "Crispy golden fries with salt", "category": "Sides", "image": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=400" },
+        { "name": "Hash Browns", "price": 49, "description": "Crispy potato hash browns", "category": "Sides", "image": "https://images.unsplash.com/photo-1639024471283-03518883512d?w=400" },
+        { "name": "Chicken Nuggets (6pc)", "price": 149, "description": "Crispy chicken nuggets", "category": "Sides", "image": "https://images.unsplash.com/photo-1619623376074-1ad5e5e0c6c8?w=400" },
+        { "name": "McFlurry Oreo", "price": 99, "description": "Vanilla soft serve with Oreo crumbles", "category": "Desserts", "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400" },
+        { "name": "Chocolate Shake", "price": 129, "description": "Rich chocolate milkshake", "category": "Beverages", "image": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=400" },
+        { "name": "Cold Coffee", "price": 119, "description": "Refreshing iced coffee", "category": "Beverages", "image": "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=400" }
       ]
     },
     {
@@ -55,10 +55,10 @@
         { "name": "Hot & Crispy Chicken (2pc)", "price": 249, "description": "Signature crispy fried chicken", "category": "Chicken", "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=200" },
         { "name": "Chicken Zinger", "price": 199, "description": "Crispy chicken fillet burger with spicy mayo", "category": "Burgers", "image": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=200" },
         { "name": "Chicken Popcorn", "price": 179, "description": "Bite-sized crispy chicken pieces", "category": "Chicken", "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=200" },
-        { "name": "Hot Wings (6pc)", "price": 229, "description": "Spicy fried chicken wings", "category": "Chicken", "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=200" },
-        { "name": "Chicken Strips (3pc)", "price": 189, "description": "Tender chicken strips with dip", "category": "Chicken", "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=200" },
+        { "name": "Hot Wings (6pc)", "price": 229, "description": "Spicy fried chicken wings", "category": "Chicken", "image": "https://images.unsplash.com/photo-1608039755401-742074f0548d?w=200" },
+        { "name": "Chicken Strips (3pc)", "price": 189, "description": "Tender chicken strips with dip", "category": "Chicken", "image": "https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=200" },
         { "name": "Rice Bowlz Chicken", "price": 199, "description": "Rice bowl with crispy chicken", "category": "Rice Bowls", "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=200" },
-        { "name": "Veg Zinger", "price": 149, "description": "Crispy veg patty burger", "category": "Burgers", "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=200" },
+        { "name": "Veg Zinger", "price": 149, "description": "Crispy veg patty burger", "category": "Burgers", "image": "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=200" },
         { "name": "Fries (Large)", "price": 119, "description": "Crispy seasoned fries", "category": "Sides", "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=200" },
         { "name": "Coleslaw", "price": 69, "description": "Fresh creamy coleslaw", "category": "Sides", "image": "https://images.unsplash.com/photo-1534938665420-4193effeacc4?w=200" },
         { "name": "Krushers Chocolate", "price": 149, "description": "Thick chocolate shake", "category": "Beverages", "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=200" }
@@ -73,11 +73,11 @@
       "deliveryTime": "20-30",
       "menu": [
         { "name": "Whopper", "price": 249, "description": "Flame-grilled beef patty with fresh veggies", "category": "Burgers", "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=200" },
-        { "name": "Crispy Veg", "price": 99, "description": "Crispy vegetable patty", "category": "Burgers", "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=200" },
+        { "name": "Crispy Veg", "price": 99, "description": "Crispy vegetable patty", "category": "Burgers", "image": "https://images.unsplash.com/photo-1585238342070-3c130e50eaf2?w=200" },
         { "name": "BK Chicken", "price": 149, "description": "Crispy chicken burger", "category": "Burgers", "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=200" },
         { "name": "Paneer King", "price": 179, "description": "Crispy paneer patty with cheese", "category": "Burgers", "image": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=200" },
         { "name": "Onion Rings", "price": 89, "description": "Crispy battered onion rings", "category": "Sides", "image": "https://images.unsplash.com/photo-1639024471283-03518883512d?w=200" },
-        { "name": "King Fries", "price": 99, "description": "Crispy golden fries", "category": "Sides", "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=200" },
+        { "name": "King Fries", "price": 99, "description": "Crispy golden fries", "category": "Sides", "image": "https://images.unsplash.com/photo-1630431341973-02e1f83ec3c8?w=200" },
         { "name": "Chilli Cheese Bites", "price": 129, "description": "Cheese filled bites with chilli", "category": "Sides", "image": "https://images.unsplash.com/photo-1548340748-6d2b7d7da280?w=200" },
         { "name": "Chocolate Sundae", "price": 79, "description": "Vanilla ice cream with chocolate sauce", "category": "Desserts", "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=200" }
       ]
@@ -91,10 +91,10 @@
       "deliveryTime": "20-25",
       "menu": [
         { "name": "Veggie Delite", "price": 179, "description": "Fresh vegetables with your choice of sauce", "category": "Subs", "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=200" },
-        { "name": "Paneer Tikka", "price": 299, "description": "Spiced paneer with mint mayo", "category": "Subs", "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=200" },
-        { "name": "Chicken Teriyaki", "price": 349, "description": "Teriyaki glazed chicken strips", "category": "Subs", "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=200" },
-        { "name": "Tuna Sub", "price": 379, "description": "Tuna salad with fresh veggies", "category": "Subs", "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=200" },
-        { "name": "Italian BMT", "price": 399, "description": "Salami, pepperoni and ham", "category": "Subs", "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=200" },
+        { "name": "Paneer Tikka", "price": 299, "description": "Spiced paneer with mint mayo", "category": "Subs", "image": "https://images.unsplash.com/photo-1592415499556-e27a0a936fd7?w=200" },
+        { "name": "Chicken Teriyaki", "price": 349, "description": "Teriyaki glazed chicken strips", "category": "Subs", "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=200" },
+        { "name": "Tuna Sub", "price": 379, "description": "Tuna salad with fresh veggies", "category": "Subs", "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=200" },
+        { "name": "Italian BMT", "price": 399, "description": "Salami, pepperoni and ham", "category": "Subs", "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=200" },
         { "name": "Cookie (2pc)", "price": 79, "description": "Freshly baked cookies", "category": "Desserts", "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=200" }
       ]
     },
@@ -108,12 +108,12 @@
       "menu": [
         { "name": "Chole Bhature", "price": 149, "description": "Fluffy bhature served with spicy chole", "category": "Main Course", "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=200" },
         { "name": "Pav Bhaji", "price": 129, "description": "Buttery mashed vegetables with soft pav", "category": "Main Course", "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=200" },
-        { "name": "Aloo Tikki Chaat", "price": 99, "description": "Crispy potato patties with tangy chutneys", "category": "Chaat", "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200" },
+        { "name": "Aloo Tikki Chaat", "price": 99, "description": "Crispy potato patties with tangy chutneys", "category": "Chaat", "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=200" },
         { "name": "Pani Puri", "price": 79, "description": "Crispy puris with spicy mint water", "category": "Chaat", "image": "https://images.unsplash.com/photo-1625398407796-82650a8c135f?w=200" },
         { "name": "Samosa (2pc)", "price": 60, "description": "Crispy pastry with spiced potato filling", "category": "Snacks", "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?w=200" },
-        { "name": "Kachori (2pc)", "price": 70, "description": "Crispy fried bread with moong dal", "category": "Snacks", "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200" },
-        { "name": "Raj Kachori", "price": 119, "description": "Large kachori topped with curd and chutneys", "category": "Chaat", "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200" },
-        { "name": "Dahi Bhalla", "price": 99, "description": "Soft lentil dumplings in sweet yogurt", "category": "Chaat", "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200" },
+        { "name": "Kachori (2pc)", "price": 70, "description": "Crispy fried bread with moong dal", "category": "Snacks", "image": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=200" },
+        { "name": "Raj Kachori", "price": 119, "description": "Large kachori topped with curd and chutneys", "category": "Chaat", "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=200" },
+        { "name": "Dahi Bhalla", "price": 99, "description": "Soft lentil dumplings in sweet yogurt", "category": "Chaat", "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=200" },
         { "name": "Gulab Jamun (2pc)", "price": 60, "description": "Soft milk dumplings in sugar syrup", "category": "Desserts", "image": "https://images.unsplash.com/photo-1666190050431-72617834eaae?w=200" },
         { "name": "Rasmalai (2pc)", "price": 80, "description": "Soft cottage cheese in saffron milk", "category": "Desserts", "image": "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?w=200" },
         { "name": "Mango Lassi", "price": 79, "description": "Creamy mango yogurt drink", "category": "Beverages", "image": "https://images.unsplash.com/photo-1527661591475-527312dd65f5?w=200" },
@@ -131,11 +131,11 @@
         { "name": "Thali Meal", "price": 249, "description": "Complete Indian meal with dal, sabzi, roti, rice", "category": "Thali", "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=200" },
         { "name": "Paneer Butter Masala", "price": 229, "description": "Cottage cheese in rich tomato gravy", "category": "Main Course", "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=200" },
         { "name": "Dal Makhani", "price": 199, "description": "Slow-cooked black lentils in butter", "category": "Main Course", "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=200" },
-        { "name": "Butter Naan", "price": 49, "description": "Soft bread baked in tandoor", "category": "Breads", "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200" },
+        { "name": "Butter Naan", "price": 49, "description": "Soft bread baked in tandoor", "category": "Breads", "image": "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=200" },
         { "name": "Jeera Rice", "price": 129, "description": "Basmati rice tempered with cumin", "category": "Rice", "image": "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=200" },
         { "name": "Kaju Katli (250g)", "price": 350, "description": "Premium cashew sweet", "category": "Sweets", "image": "https://images.unsplash.com/photo-1605197181958-0f9eb5ac7ea5?w=200" },
-        { "name": "Soan Papdi (250g)", "price": 150, "description": "Flaky cardamom sweet", "category": "Sweets", "image": "https://images.unsplash.com/photo-1605197181958-0f9eb5ac7ea5?w=200" },
-        { "name": "Motichoor Ladoo (6pc)", "price": 180, "description": "Orange gram flour sweet balls", "category": "Sweets", "image": "https://images.unsplash.com/photo-1605197181958-0f9eb5ac7ea5?w=200" }
+        { "name": "Soan Papdi (250g)", "price": 150, "description": "Flaky cardamom sweet", "category": "Sweets", "image": "https://images.unsplash.com/photo-1606312617090-1e76b57f0920?w=200" },
+        { "name": "Motichoor Ladoo (6pc)", "price": 180, "description": "Orange gram flour sweet balls", "category": "Sweets", "image": "https://images.unsplash.com/photo-1639741175-d0c86cda1acf?w=200" }
       ]
     },
     {
@@ -147,13 +147,13 @@
       "deliveryTime": "35-45",
       "menu": [
         { "name": "Hyderabadi Chicken Biryani", "price": 299, "description": "Authentic dum-cooked chicken biryani", "category": "Biryani", "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200" },
-        { "name": "Lucknowi Mutton Biryani", "price": 399, "description": "Tender mutton in aromatic rice", "category": "Biryani", "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200" },
-        { "name": "Paneer Biryani", "price": 249, "description": "Paneer cubes in fragrant basmati", "category": "Biryani", "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200" },
-        { "name": "Veg Biryani", "price": 199, "description": "Mixed vegetables in spiced rice", "category": "Biryani", "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200" },
-        { "name": "Egg Biryani", "price": 229, "description": "Boiled eggs in flavorful biryani", "category": "Biryani", "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200" },
+        { "name": "Lucknowi Mutton Biryani", "price": 399, "description": "Tender mutton in aromatic rice", "category": "Biryani", "image": "https://images.unsplash.com/photo-1642821373181-696a54913e93?w=200" },
+        { "name": "Paneer Biryani", "price": 249, "description": "Paneer cubes in fragrant basmati", "category": "Biryani", "image": "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?w=200" },
+        { "name": "Veg Biryani", "price": 199, "description": "Mixed vegetables in spiced rice", "category": "Biryani", "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=200" },
+        { "name": "Egg Biryani", "price": 229, "description": "Boiled eggs in flavorful biryani", "category": "Biryani", "image": "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?w=200" },
         { "name": "Chicken 65", "price": 199, "description": "Spicy fried chicken appetizer", "category": "Starters", "image": "https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?w=200" },
-        { "name": "Mirchi Ka Salan", "price": 149, "description": "Green chillies in peanut curry", "category": "Sides", "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=200" },
-        { "name": "Raita", "price": 59, "description": "Cooling yogurt with vegetables", "category": "Sides", "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=200" },
+        { "name": "Mirchi Ka Salan", "price": 149, "description": "Green chillies in peanut curry", "category": "Sides", "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=200" },
+        { "name": "Raita", "price": 59, "description": "Cooling yogurt with vegetables", "category": "Sides", "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=200" },
         { "name": "Phirni", "price": 79, "description": "Creamy rice pudding", "category": "Desserts", "image": "https://images.unsplash.com/photo-1666190050431-72617834eaae?w=200" }
       ]
     },
@@ -167,9 +167,9 @@
       "menu": [
         { "name": "Paradise Special Biryani", "price": 349, "description": "Our signature chicken biryani recipe", "category": "Biryani", "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=200" },
         { "name": "Mutton Biryani", "price": 449, "description": "Slow-cooked mutton with basmati", "category": "Biryani", "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200" },
-        { "name": "Prawns Biryani", "price": 499, "description": "Fresh prawns in spiced rice", "category": "Biryani", "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200" },
+        { "name": "Prawns Biryani", "price": 499, "description": "Fresh prawns in spiced rice", "category": "Biryani", "image": "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?w=200" },
         { "name": "Kebab Platter", "price": 399, "description": "Assorted grilled kebabs", "category": "Starters", "image": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=200" },
-        { "name": "Double Ka Meetha", "price": 99, "description": "Bread pudding with nuts", "category": "Desserts", "image": "https://images.unsplash.com/photo-1666190050431-72617834eaae?w=200" }
+        { "name": "Double Ka Meetha", "price": 99, "description": "Bread pudding with nuts", "category": "Desserts", "image": "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?w=200" }
       ]
     },
     {
@@ -181,14 +181,14 @@
       "deliveryTime": "25-35",
       "menu": [
         { "name": "Masala Dosa", "price": 120, "description": "Crispy crepe with spiced potato filling", "category": "Dosa", "image": "https://images.unsplash.com/photo-1668236543090-82eb5eaf701b?w=200" },
-        { "name": "Plain Dosa", "price": 90, "description": "Crispy rice and lentil crepe", "category": "Dosa", "image": "https://images.unsplash.com/photo-1668236543090-82eb5eaf701b?w=200" },
-        { "name": "Rava Dosa", "price": 110, "description": "Crispy semolina crepe", "category": "Dosa", "image": "https://images.unsplash.com/photo-1668236543090-82eb5eaf701b?w=200" },
-        { "name": "Mysore Masala Dosa", "price": 140, "description": "Dosa with red chutney and potato", "category": "Dosa", "image": "https://images.unsplash.com/photo-1668236543090-82eb5eaf701b?w=200" },
+        { "name": "Plain Dosa", "price": 90, "description": "Crispy rice and lentil crepe", "category": "Dosa", "image": "https://images.unsplash.com/photo-1630383249896-424e482df921?w=200" },
+        { "name": "Rava Dosa", "price": 110, "description": "Crispy semolina crepe", "category": "Dosa", "image": "https://images.unsplash.com/photo-1694159466168-a80555d8f743?w=200" },
+        { "name": "Mysore Masala Dosa", "price": 140, "description": "Dosa with red chutney and potato", "category": "Dosa", "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=200" },
         { "name": "Idli (3pc)", "price": 60, "description": "Steamed rice cakes with sambar", "category": "Idli", "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=200" },
         { "name": "Medu Vada (2pc)", "price": 70, "description": "Crispy lentil fritters", "category": "Vada", "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=200" },
-        { "name": "Uttapam", "price": 100, "description": "Thick pancake with vegetables", "category": "Uttapam", "image": "https://images.unsplash.com/photo-1630383249896-424e482df921?w=200" },
-        { "name": "Pongal", "price": 90, "description": "Rice and lentil porridge", "category": "Rice", "image": "https://images.unsplash.com/photo-1630383249896-424e482df921?w=200" },
-        { "name": "Sambar Rice", "price": 110, "description": "Rice mixed with sambar", "category": "Rice", "image": "https://images.unsplash.com/photo-1630383249896-424e482df921?w=200" },
+        { "name": "Uttapam", "price": 100, "description": "Thick pancake with vegetables", "category": "Uttapam", "image": "https://images.unsplash.com/photo-1694159466401-8118e03f5e5c?w=200" },
+        { "name": "Pongal", "price": 90, "description": "Rice and lentil porridge", "category": "Rice", "image": "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=200" },
+        { "name": "Sambar Rice", "price": 110, "description": "Rice mixed with sambar", "category": "Rice", "image": "https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=200" },
         { "name": "Filter Coffee", "price": 49, "description": "Traditional South Indian coffee", "category": "Beverages", "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=200" },
         { "name": "Kesari Bath", "price": 60, "description": "Sweet semolina dessert", "category": "Desserts", "image": "https://images.unsplash.com/photo-1666190050431-72617834eaae?w=200" }
       ]
@@ -203,12 +203,12 @@
       "menu": [
         { "name": "Butter Chicken", "price": 349, "description": "The original butter chicken recipe since 1947", "category": "Main Course", "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=200" },
         { "name": "Tandoori Chicken (Full)", "price": 449, "description": "Classic clay oven roasted chicken", "category": "Tandoor", "image": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=200" },
-        { "name": "Chicken Tikka", "price": 299, "description": "Boneless chicken pieces from tandoor", "category": "Tandoor", "image": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=200" },
-        { "name": "Seekh Kebab", "price": 279, "description": "Minced mutton kebabs", "category": "Tandoor", "image": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=200" },
+        { "name": "Chicken Tikka", "price": 299, "description": "Boneless chicken pieces from tandoor", "category": "Tandoor", "image": "https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?w=200" },
+        { "name": "Seekh Kebab", "price": 279, "description": "Minced mutton kebabs", "category": "Tandoor", "image": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=200" },
         { "name": "Dal Makhani", "price": 229, "description": "24-hour slow cooked lentils", "category": "Main Course", "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=200" },
         { "name": "Paneer Tikka Masala", "price": 279, "description": "Grilled paneer in spicy gravy", "category": "Main Course", "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=200" },
-        { "name": "Roomali Roti", "price": 49, "description": "Paper-thin handkerchief bread", "category": "Breads", "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200" },
-        { "name": "Kulcha", "price": 59, "description": "Stuffed leavened bread", "category": "Breads", "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200" }
+        { "name": "Roomali Roti", "price": 49, "description": "Paper-thin handkerchief bread", "category": "Breads", "image": "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=200" },
+        { "name": "Kulcha", "price": 59, "description": "Stuffed leavened bread", "category": "Breads", "image": "https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=200" }
       ]
     },
     {
@@ -219,8 +219,8 @@
       "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop",
       "deliveryTime": "30-40",
       "menu": [
-        { "name": "Sarson Da Saag", "price": 249, "description": "Mustard greens with makki roti", "category": "Main Course", "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=200" },
-        { "name": "Makki Di Roti", "price": 49, "description": "Corn flour flatbread", "category": "Breads", "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200" },
+        { "name": "Sarson Da Saag", "price": 249, "description": "Mustard greens with makki roti", "category": "Main Course", "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=200" },
+        { "name": "Makki Di Roti", "price": 49, "description": "Corn flour flatbread", "category": "Breads", "image": "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=200" },
         { "name": "Amritsari Fish", "price": 349, "description": "Crispy fried fish Amritsar style", "category": "Starters", "image": "https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?w=200" },
         { "name": "Chole Kulche", "price": 159, "description": "Spiced chickpeas with bread", "category": "Main Course", "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=200" },
         { "name": "Lassi Sweet", "price": 79, "description": "Creamy Punjabi yogurt drink", "category": "Beverages", "image": "https://images.unsplash.com/photo-1527661591475-527312dd65f5?w=200" },
@@ -236,10 +236,10 @@
       "deliveryTime": "20-30",
       "menu": [
         { "name": "Steamed Veg Momos", "price": 129, "description": "Classic steamed vegetable momos", "category": "Momos", "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=200" },
-        { "name": "Steamed Chicken Momos", "price": 159, "description": "Juicy chicken filled momos", "category": "Momos", "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=200" },
-        { "name": "Fried Momos", "price": 149, "description": "Crispy fried vegetable momos", "category": "Momos", "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=200" },
-        { "name": "Tandoori Momos", "price": 179, "description": "Momos roasted in tandoor", "category": "Momos", "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=200" },
-        { "name": "Momo Burger", "price": 149, "description": "Unique momo patty burger", "category": "Burgers", "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=200" },
+        { "name": "Steamed Chicken Momos", "price": 159, "description": "Juicy chicken filled momos", "category": "Momos", "image": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=200" },
+        { "name": "Fried Momos", "price": 149, "description": "Crispy fried vegetable momos", "category": "Momos", "image": "https://images.unsplash.com/photo-1626804475297-41608ea09aeb?w=200" },
+        { "name": "Tandoori Momos", "price": 179, "description": "Momos roasted in tandoor", "category": "Momos", "image": "https://images.unsplash.com/photo-1504424937795-34945e9cd740?w=200" },
+        { "name": "Momo Burger", "price": 149, "description": "Unique momo patty burger", "category": "Burgers", "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=200" },
         { "name": "Thukpa", "price": 169, "description": "Tibetan noodle soup", "category": "Soups", "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=200" }
       ]
     },
@@ -256,7 +256,7 @@
         { "name": "Chicken Supreme", "price": 449, "description": "Topped with juicy chicken pieces", "category": "Pizzas", "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=200" },
         { "name": "Stuffed Crust Pizza", "price": 549, "description": "Cheese stuffed in the crust", "category": "Pizzas", "image": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=200" },
         { "name": "Garlic Bread Supreme", "price": 159, "description": "Topped with cheese and jalapenos", "category": "Sides", "image": "https://images.unsplash.com/photo-1619531040576-f9416740661b?w=200" },
-        { "name": "Chicken Wings", "price": 199, "description": "Spicy BBQ chicken wings", "category": "Sides", "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=200" }
+        { "name": "Chicken Wings", "price": 199, "description": "Spicy BBQ chicken wings", "category": "Sides", "image": "https://images.unsplash.com/photo-1608039755401-742074f0548d?w=200" }
       ]
     },
     {
@@ -268,7 +268,7 @@
       "deliveryTime": "20-30",
       "menu": [
         { "name": "Crunchy Taco", "price": 99, "description": "Crispy corn shell with seasoned filling", "category": "Tacos", "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=200" },
-        { "name": "Crunchy Taco Supreme", "price": 149, "description": "Loaded taco with extra toppings", "category": "Tacos", "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=200" },
+        { "name": "Crunchy Taco Supreme", "price": 149, "description": "Loaded taco with extra toppings", "category": "Tacos", "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=200" },
         { "name": "Burrito Supreme", "price": 199, "description": "Flour tortilla with beans and cheese", "category": "Burritos", "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=200" },
         { "name": "Nachos Supreme", "price": 179, "description": "Crispy nachos with cheese sauce", "category": "Sides", "image": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=200" },
         { "name": "Mexican Rice", "price": 99, "description": "Spiced tomato rice", "category": "Sides", "image": "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=200" },
@@ -284,8 +284,8 @@
       "deliveryTime": "15-25",
       "menu": [
         { "name": "Chai (Regular)", "price": 69, "description": "Customize your perfect chai", "category": "Chai", "image": "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=200" },
-        { "name": "Masala Chai", "price": 79, "description": "Spiced traditional tea", "category": "Chai", "image": "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=200" },
-        { "name": "Iced Chai", "price": 99, "description": "Refreshing cold chai", "category": "Chai", "image": "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=200" },
+        { "name": "Masala Chai", "price": 79, "description": "Spiced traditional tea", "category": "Chai", "image": "https://images.unsplash.com/photo-1597318111512-8f1228e5e253?w=200" },
+        { "name": "Iced Chai", "price": 99, "description": "Refreshing cold chai", "category": "Chai", "image": "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=200" },
         { "name": "Cheese Maggi", "price": 149, "description": "Instant noodles with cheese", "category": "Maggi", "image": "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=200" },
         { "name": "Veg Grilled Sandwich", "price": 139, "description": "Toasted sandwich with veggies", "category": "Snacks", "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=200" },
         { "name": "Samosa (2pc)", "price": 79, "description": "Crispy samosas with chai", "category": "Snacks", "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?w=200" },
@@ -318,13 +318,13 @@
       "deliveryTime": "25-35",
       "menu": [
         { "name": "Veg Hakka Noodles", "price": 179, "description": "Stir-fried noodles with vegetables", "category": "Noodles", "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=200" },
-        { "name": "Chicken Chow Mein", "price": 229, "description": "Crispy noodles with chicken", "category": "Noodles", "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=200" },
+        { "name": "Chicken Chow Mein", "price": 229, "description": "Crispy noodles with chicken", "category": "Noodles", "image": "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=200" },
         { "name": "Veg Fried Rice", "price": 169, "description": "Wok-tossed rice with veggies", "category": "Rice", "image": "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=200" },
-        { "name": "Schezwan Fried Rice", "price": 189, "description": "Spicy Schezwan style rice", "category": "Rice", "image": "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=200" },
-        { "name": "Manchurian Gravy", "price": 199, "description": "Veg balls in spicy gravy", "category": "Main Course", "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=200" },
-        { "name": "Chilli Paneer", "price": 219, "description": "Indo-Chinese paneer dish", "category": "Starters", "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=200" },
+        { "name": "Schezwan Fried Rice", "price": 189, "description": "Spicy Schezwan style rice", "category": "Rice", "image": "https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=200" },
+        { "name": "Manchurian Gravy", "price": 199, "description": "Veg balls in spicy gravy", "category": "Main Course", "image": "https://images.unsplash.com/photo-1626804475297-41608ea09aeb?w=200" },
+        { "name": "Chilli Paneer", "price": 219, "description": "Indo-Chinese paneer dish", "category": "Starters", "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=200" },
         { "name": "Spring Rolls (4pc)", "price": 149, "description": "Crispy vegetable rolls", "category": "Starters", "image": "https://images.unsplash.com/photo-1606525437679-5bf624ffe90c?w=200" },
-        { "name": "Honey Chilli Potato", "price": 179, "description": "Crispy potato in sweet chilli sauce", "category": "Starters", "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=200" }
+        { "name": "Honey Chilli Potato", "price": 179, "description": "Crispy potato in sweet chilli sauce", "category": "Starters", "image": "https://images.unsplash.com/photo-1639744091413-e6e0154e9656?w=200" }
       ]
     },
     {
@@ -336,7 +336,7 @@
       "deliveryTime": "30-40",
       "menu": [
         { "name": "1/4 Peri Peri Chicken", "price": 299, "description": "Flame-grilled chicken with peri peri", "category": "Chicken", "image": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=200" },
-        { "name": "1/2 Peri Peri Chicken", "price": 449, "description": "Half chicken with signature spice", "category": "Chicken", "image": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=200" },
+        { "name": "1/2 Peri Peri Chicken", "price": 449, "description": "Half chicken with signature spice", "category": "Chicken", "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=200" },
         { "name": "Chicken Burger", "price": 249, "description": "Grilled chicken in a bun", "category": "Burgers", "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=200" },
         { "name": "Spicy Rice", "price": 149, "description": "Rice with peri peri spices", "category": "Sides", "image": "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=200" },
         { "name": "Peri Peri Fries", "price": 149, "description": "Fries with peri peri seasoning", "category": "Sides", "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=200" },
