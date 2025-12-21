@@ -4,7 +4,6 @@
 
 [app_servers]
 # Application Server - Using public IP for deployment
-zomato-server ansible_host=107.21.240.12 ansible_user=ubuntu
 app_server ansible_host=107.21.240.12 ansible_user=ubuntu
 
 [app_servers:vars]
@@ -19,7 +18,7 @@ environment=production
 
 [jenkins_servers]
 # Jenkins server - updated from terraform output
-jenkins-server ansible_host=107.21.240.12 ansible_user=ubuntu
+jenkins-server ansible_host=44.221.12.234 ansible_user=ubuntu
 
 [jenkins_servers:vars]
 ansible_python_interpreter=/usr/bin/python3
