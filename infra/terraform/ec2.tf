@@ -1,7 +1,7 @@
 # EC2 Instance - Main application server
 # Runs Docker containers for frontend, backend, and database
 
-resource "aws_instance" "cicd-app-server" {
+resource "aws_instance" "app_server" {
   ami                    = var.ami_id
   instance_type          = var.instance_type
   key_name               = var.key_name
@@ -75,8 +75,8 @@ resource "aws_instance" "cicd-app-server" {
 
 # Elastic IP - Static public IP for the instance
 # Useful for DNS and consistent access
-resource "aws_eip" "cicd-app-server" {
-  instance = aws_instance.cicd-app-server.id
+resource "aws_eip" "app_server" {
+  instance = aws_instance.app_server.id
   domain   = "vpc"
 
   tags = {

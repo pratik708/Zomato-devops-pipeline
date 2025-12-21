@@ -5,6 +5,7 @@
 [app_servers]
 # Application Server - Using public IP for deployment
 zomato-server ansible_host=107.21.240.12 ansible_user=ubuntu
+app_server ansible_host=107.21.240.12 ansible_user=ubuntu
 
 [app_servers:vars]
 # Python interpreter on Ubuntu

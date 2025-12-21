@@ -3,7 +3,7 @@
 # This playbook installs Jenkins on the dedicated EC2 instance
 
 - name: Install Jenkins on EC2
-  hosts: Jenkins
+  hosts: jenkins_servers
   become: yes
   gather_facts: yes
 

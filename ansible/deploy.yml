@@ -3,7 +3,7 @@
 # This playbook deploys the containerized application using docker-compose
 
 - name: Deploy Zomato Application
-  hosts: cicd-app-server
+  hosts: app_servers
   become: yes
   gather_facts: yes
 
