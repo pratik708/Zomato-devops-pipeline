@@ -138,7 +138,7 @@ pipeline {
                     sh """
                         cd frontend
                         docker build \
-                            --build-arg VITE_API_BASE=http://${EC2_PUBLIC_IP}:4000 \
+                            --build-arg VITE_API_BASE=http:/https://foodhub.sbs \
                             -t ${PROJECT_NAME}-frontend:${BUILD_NUMBER} .
                         docker tag ${PROJECT_NAME}-frontend:${BUILD_NUMBER} ${PROJECT_NAME}-frontend:latest
                     """

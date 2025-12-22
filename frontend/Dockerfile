@@ -1,7 +1,7 @@
 FROM node:18-alpine as build
 
 # Build argument for API base URL
-ARG VITE_API_BASE=http://localhost:4000
+ARG VITE_API_BASE=https://foodhub.sbs
 ENV VITE_API_BASE=${VITE_API_BASE}
 
 WORKDIR /app

@@ -87,7 +87,7 @@
     # ==========================================
     - name: Start application with docker-compose
       shell: |
-        export VITE_API_BASE=http://{{ public_ip }}:4000
+        export VITE_API_BASE=https://foodhub.sbs
         export OPENAI_API_KEY="{{ openai_api_key }}"
         docker compose build --no-cache frontend
         docker compose up -d --build || docker-compose up -d --build
@@ -95,7 +95,7 @@
         chdir: "{{ app_dir }}"
       become_user: ubuntu
       environment:
-        VITE_API_BASE: "http://{{ public_ip }}:4000"
+        VITE_API_BASE: "https://foodhub.sbs"
         OPENAI_API_KEY: "{{ openai_api_key }}"
 
     # ==========================================
