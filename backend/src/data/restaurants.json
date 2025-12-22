@@ -8,7 +8,7 @@
       "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop",
       "deliveryTime": "25-30",
       "menu": [
-        { "name": "Margherita Pizza", "price": 149, "description": "Classic delight with 100% real mozzarella cheese", "category": "Pizzas", "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=200" },
+        { "name": "Margherita Pizza", "price": 199, "description": "Classic delight with 100% real mozzarella cheese", "category": "Pizzas", "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=200" },
         { "name": "Peppy Paneer", "price": 349, "description": "Chunky paneer with crisp capsicum and spicy red pepper", "category": "Pizzas", "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=200" },
         { "name": "Farmhouse Pizza", "price": 399, "description": "Delightful combination of onion, capsicum, tomato & grilled mushroom", "category": "Pizzas", "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=200" },
         { "name": "Mexican Green Wave", "price": 449, "description": "Mexican herbs complemented with jalapeno & tomato", "category": "Pizzas", "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=200" },
