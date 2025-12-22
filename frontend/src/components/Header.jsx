@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { currentUser, logout } from '../auth';
+import SearchModal from './SearchModal';
+import OffersModal from './OffersModal';
+import HelpModal from './HelpModal';
 
 export default function Header({ cartCount = 0 }) {
   const navigate = useNavigate();
@@ -9,6 +12,9 @@ export default function Header({ cartCount = 0 }) {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showLocationDropdown, setShowLocationDropdown] = useState(false);
   const [selectedLocation, setSelectedLocation] = useState('Bangalore, India');
+  const [showSearchModal, setShowSearchModal] = useState(false);
+  const [showOffersModal, setShowOffersModal] = useState(false);
+  const [showHelpModal, setShowHelpModal] = useState(false);
 
   const locations = [
     'Bangalore, India',
@@ -95,20 +101,20 @@ export default function Header({ cartCount = 0 }) {
 
         {/* Navigation Links */}
         <div className="nav-right">
-          <Link to="/" className="nav-link">
+          <button className="nav-link" onClick={() => setShowSearchModal(true)}>
             <span className="nav-icon">🔍</span>
             <span className="nav-text">Search</span>
-          </Link>
+          </button>
           
-          <Link to="/" className="nav-link">
+          <button className="nav-link" onClick={() => setShowOffersModal(true)}>
             <span className="nav-icon">🏷️</span>
             <span className="nav-text">Offers</span>
-          </Link>
+          </button>
           
-          <Link to="/" className="nav-link">
+          <button className="nav-link" onClick={() => setShowHelpModal(true)}>
             <span className="nav-icon">❓</span>
             <span className="nav-text">Help</span>
-          </Link>
+          </button>
           
           {user ? (
             <>
@@ -159,6 +165,9 @@ export default function Header({ cartCount = 0 }) {
           )}
         </div>
       </nav>
+      <SearchModal isOpen={showSearchModal} onClose={() => setShowSearchModal(false)} />
+      <OffersModal isOpen={showOffersModal} onClose={() => setShowOffersModal(false)} />
+      <HelpModal isOpen={showHelpModal} onClose={() => setShowHelpModal(false)} />
     </header>
   );
 }

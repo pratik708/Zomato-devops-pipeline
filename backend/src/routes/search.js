@@ -1,0 +1,7 @@
+const express=require('express');const router=express.Router();const {Restaurant,MenuItem}=require('../models');const {Op}=require('sequelize');
+
+router.get('/',async(req,res)=>{try{const {q,category,location,minRating,maxDeliveryTime}=req.query;const where={};const menuWhere={};if(q){where[Op.or]=[{name:{[Op.iLike]:`%${q}%`}},{cuisine:{[Op.iLike]:`%${q}%`}}];menuWhere.name={[Op.iLike]:`%${q}%`};}if(category)menuWhere.category=category;if(location)where.location={[Op.iLike]:`%${location}%`};if(minRating)where.rating={[Op.gte]:parseFloat(minRating)};if(maxDeliveryTime)where.deliveryTime={[Op.lte]:parseInt(maxDeliveryTime)};const restaurants=await Restaurant.findAll({where,include:[{model:MenuItem,where:Object.keys(menuWhere).length?menuWhere:undefined}],limit:20});res.json({results:restaurants,count:restaurants.length,query:q||'all',filters:{category,location,minRating,maxDeliveryTime}});}catch(e){res.status(500).json({error:'Search failed'});}});
+
+router.get('/suggestions',async(req,res)=>{try{const {q}=req.query;const cuisines=await sequelize.query(`SELECT DISTINCT cuisine FROM restaurants WHERE cuisine ILIKE '%${q}%' LIMIT 5`);const items=await MenuItem.findAll({where:{name:{[Op.iLike]:`%${q}%`}},attributes:['name','category'],group:['name','category'],limit:5,raw:true});res.json({suggestions:{cuisines:cuisines[0].map(c=>c.cuisine),dishes:items.map(i=>i.name),categories:items.map(i=>i.category)}});}catch(e){res.status(500).json({error:'Suggestions failed'});}});
+
+module.exports=router;
