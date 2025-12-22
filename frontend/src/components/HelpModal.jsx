@@ -20,9 +20,16 @@ export default function HelpModal({ isOpen, onClose }) {
     account: { icon: '👤', label: 'Account & Login' }
   };
 
-  const handleSelectCategory = (cat) => {
+  const handleSelectCategory = async (cat) => {
     setCategory(cat);
-    setIssues(categories[cat]?Object.keys(categories[cat]).filter(k=>k!=='icon'&&k!=='label'):[]);
+    try {
+      const res = await fetch(`${API_BASE}/help/issues/${cat}`);
+      const data = await res.json();
+      setIssues(data.issues||[]);
+    } catch (e) {
+      console.error('Get issues failed', e);
+      setIssues([]);
+    }
     setStep(1);
   };
 
