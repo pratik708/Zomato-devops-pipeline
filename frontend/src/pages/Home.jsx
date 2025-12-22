@@ -24,11 +24,16 @@ export default function Home() {
     setLoading(true);
     api.get('/api/restaurants')
       .then(res => {
+        console.log('✅ Restaurants loaded:', res.data.length);
         setRestaurants(res.data);
         setLoading(false);
       })
       .catch(err => {
-        console.error('Failed to fetch restaurants:', err);
+        console.error('❌ Failed to fetch restaurants:', err.message);
+        if(err.response) {
+          console.error('Response status:', err.response.status);
+          console.error('Response data:', err.response.data);
+        }
         setLoading(false);
       });
   }, []);
