@@ -1,7 +1,7 @@
 # Jenkins EC2 Instance - CI/CD Server
 # Dedicated instance for running Jenkins pipelines
 
-resource "aws_instance" "jenkins_server" {
+resource "aws_instance" "Jenkins" {
   ami                    = var.ami_id
   instance_type          = var.jenkins_instance_type
   key_name               = var.key_name
@@ -80,8 +80,8 @@ resource "aws_instance" "jenkins_server" {
 }
 
 # Elastic IP for Jenkins - Static public IP
-resource "aws_eip" "jenkins_server" {
-  instance = aws_instance.jenkins_server.id
+resource "aws_eip" "Jenkins" {
+  instance = aws_instance.Jenkins.id
   domain   = "vpc"
 
   tags = {

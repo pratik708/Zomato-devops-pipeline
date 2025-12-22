@@ -3,7 +3,7 @@
 # Run: ansible-playbook ping.yml
 
 - name: Test Connection to Servers
-  hosts: app_servers
+  hosts: app_server
   gather_facts: no
 
   tasks:

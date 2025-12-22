@@ -3,13 +3,13 @@
 # terraform.tfvars is gitignored for security
 
 # AWS Configuration
-aws_region  = "ap-south-1"
+aws_region  = "us-east-1"
 environment = "dev"
 
 # EC2 Configuration
 instance_type = "t3.micro"
 # TODO: Replace with your EC2 key pair name
-key_name      = "zomato-deploy-key"
+key_name      = "fullstack-cicd"
 
 # Security Configuration 
 # TODO: Replace with your IP address for better security

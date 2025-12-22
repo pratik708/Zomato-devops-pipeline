@@ -8,8 +8,8 @@
   gather_facts: yes
 
   vars:
-    jenkins_admin_user: admin
-    jenkins_admin_password: "{{ lookup('env', 'JENKINS_ADMIN_PASSWORD') | default('admin123', true) }}"
+    jenkins_admin_user: deepak
+    jenkins_admin_password: "{{ lookup('env', 'JENKINS_ADMIN_PASSWORD') | default('1010', true) }}"
     jenkins_home: /var/lib/jenkins
 
   tasks:
@@ -128,8 +128,8 @@
 
     - name: Copy SSH key for app server deployment
       copy:
-        src: ~/.ssh/zomato-deploy-key.pem
-        dest: "{{ jenkins_home }}/.ssh/zomato-deploy-key.pem"
+        src: ~/.ssh/fullstack-cicd.pem
+        dest: "{{ jenkins_home }}/.ssh/fullstack-cicd.pem"
         owner: jenkins
         group: jenkins
         mode: '0600'
@@ -153,7 +153,7 @@
           - "🎉 Jenkins Installed Successfully!"
           - "========================================"
           - "Jenkins URL: http://{{ ansible_host }}:8080"
-          - "SSH Access: ssh -i ~/.ssh/zomato-deploy-key.pem ubuntu@{{ ansible_host }}"
+          - "SSH Access: ssh -i ~/.ssh/fullstack-cicd.pem ubuntu@{{ ansible_host }}"
           - ""
           - "Initial Setup:"
           - "1. Open Jenkins URL in browser"

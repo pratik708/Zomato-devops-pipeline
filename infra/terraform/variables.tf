@@ -4,7 +4,7 @@
 variable "aws_region" {
   description = "AWS region for resources"
   type        = string
-  default     = "ap-south-1"
+  default     = "us-east-1"
 }
 
 variable "environment" {
@@ -28,16 +28,16 @@ variable "instance_type" {
 variable "jenkins_instance_type" {
   description = "EC2 instance type for Jenkins server"
   type        = string
-  default     = "t3.small"  # Jenkins needs more resources (2 vCPU, 2GB RAM)
+  default     = "t3.micro"  # Jenkins needs more resources (2 vCPU, 2GB RAM)
 }
 
 variable "ami_id" {
-  description = "AMI ID for EC2 instance (Ubuntu 22.04 LTS in ap-south-1)"
+  description = "AMI ID for EC2 instance (Ubuntu 22.04 LTS in us-east-1)"
   type        = string
   # TODO: Update this AMI ID for your region if different
-  # This is Ubuntu 22.04 LTS for ap-south-1
+  # This is Ubuntu 22.04 LTS for us-east-1
   # Find latest: aws ec2 describe-images --owners 099720109477 --filters "Name=name,Values=ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*" --query 'Images | sort_by(@, &CreationDate) | [-1].ImageId'
-  default     = "ami-0f58b397bc5c1f2e8"
+  default     = "ami-03deb8c961063af8c"
 }
 
 variable "key_name" {
@@ -46,7 +46,7 @@ variable "key_name" {
   # TODO: Create an EC2 key pair in AWS Console or via CLI:
   # aws ec2 create-key-pair --key-name zomato-deploy-key --query 'KeyMaterial' --output text > zomato-deploy-key.pem
   # chmod 400 zomato-deploy-key.pem
-  default     = "zomato-deploy-key"
+  default     = "fullstack-cicd"
 }
 
 variable "allowed_ssh_cidr" {

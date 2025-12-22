@@ -9,9 +9,9 @@
 
   vars:
     app_dir: /home/ubuntu/zomato-app
-    repo_url: https://github.com/harsh-raj04/Zomato-devops-pipeline.git
+    repo_url: https://github.com/deepakbatra5/Zomato-devops-pipelines.git
     branch: "{{ lookup('env', 'GIT_BRANCH') | default('main', true) | regex_replace('^origin/', '') }}"
-    public_ip: "{{ lookup('env', 'EC2_PUBLIC_IP') | default('13.203.190.4', true) }}"
+    public_ip: "{{ lookup('env', 'EC2_PUBLIC_IP') | default('107.21.240.12', true) }}"
     openai_api_key: "{{ lookup('env', 'OPENAI_API_KEY') | default('', true) }}"
 
   tasks:

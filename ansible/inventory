@@ -3,8 +3,8 @@
 # Update the ansible_host IP after running terraform apply
 
 [app_servers]
-# Using private IP since Jenkins and app server are in same VPC/subnet
-zomato-server ansible_host=10.0.1.240 ansible_user=ubuntu
+# Application Server - Using public IP for deployment
+app_server ansible_host=107.21.240.12 ansible_user=ubuntu
 
 [app_servers:vars]
 # Python interpreter on Ubuntu
@@ -18,7 +18,7 @@ environment=production
 
 [jenkins_servers]
 # Jenkins server - updated from terraform output
-jenkins-server ansible_host=13.200.72.225 ansible_user=ubuntu
+jenkins-server ansible_host=44.221.12.234 ansible_user=ubuntu
 
 [jenkins_servers:vars]
 ansible_python_interpreter=/usr/bin/python3

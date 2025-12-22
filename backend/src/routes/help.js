@@ -1,0 +1,13 @@
+const express=require('express');const router=express.Router();const auth=require('../middleware/auth');const {Order,User}=require('../models');
+
+const helpTopics={order:{issues:['Where is my order?','Order seems wrong','Payment issue'],solutions:{'where is my order?':'Contact delivery partner using the call button on your active order. Real-time tracking available.','order seems wrong':'We will refund the difference immediately.','payment issue':'Your payment is being processed. Check your email for confirmation.'}},payment:{issues:['Payment failed','Refund pending','Card not accepted'],solutions:{'payment failed':'Try another card or payment method.','refund pending':'Refund processes within 5-7 business days.','card not accepted':'Try Debit Card or UPI.'}},delivery:{issues:['Delivery charge high','No delivery available','Delivery delayed'],solutions:{'delivery charge high':'Delivery charges based on distance & time.','no delivery available':'Try different restaurants in your area.','delivery delayed':'Live track your delivery in the app.'}},account:{issues:['Can\'t login','Password reset','Account suspended'],solutions:{'can\'t login':'Check email/password, try password reset.','password reset':'Reset link has been sent to your email.','account suspended':'Contact our support team for assistance.'}}};
+
+router.get('/topics',async(req,res)=>{res.json({topics:Object.keys(helpTopics),message:'Select your issue category'});});
+
+router.get('/issues/:category',async(req,res)=>{try{const {category}=req.params;if(!helpTopics[category])return res.status(400).json({error:'Invalid category'});res.json({category,issues:helpTopics[category].issues,message:`Common ${category} issues`});}catch(e){res.status(500).json({error:'Get issues failed'});}});
+
+router.get('/solution/:category/:issue',async(req,res)=>{try{const {category,issue}=req.params;if(!helpTopics[category])return res.status(400).json({error:'Invalid category'});const issueKey=decodeURIComponent(issue).toLowerCase();const solution=helpTopics[category].solutions[issueKey];res.json({category,issue:decodeURIComponent(issue),solution:solution||'Contact our support team.',escalate:!solution});}catch(e){res.status(500).json({error:'Get solution failed'});}});
+
+router.post('/escalate',auth,async(req,res)=>{try{const {category,issue,description}=req.body;const ticket={id:Math.random().toString(36).substr(2,9),userId:req.user.id,category,issue,description,status:'open',createdAt:new Date(),response:null};res.status(201).json({ticket,message:'Support ticket created. Our team will reach out within 2 hours.'});}catch(e){res.status(500).json({error:'Escalate failed'});}});
+
+module.exports=router;
